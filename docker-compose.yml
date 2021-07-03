@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  postgre:
+    image: postgres:13
+    ports:
+    - 127.0.0.1:5432:5432
+    environment:
+      POSTGRES_DB: invoicing
+      POSTGRES_USER: invoicing
+      POSTGRES_PASSWORD: invoicing
+      PGDATA: /var/lib/postgresql/data/pgdata
